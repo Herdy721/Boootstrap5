@@ -1,0 +1,23 @@
+.texto-menor {
+    font-size: 13px
+}
+
+.divs-facilidades{
+    width: 325px;
+}
+
+.botao-lilas {
+    background-color: #9353FF;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.botao-lilas:hover{
+    background-color: blue;
+}
+
+.verde-limao {
+    color: #DAFF01;
+}
+
