@@ -50,3 +50,9 @@ O padrão de direção no flex é `row` ou linha, então ao utilizar o Bootstr
 
 Mais infos em https://cursos.alura.com.br/course/bootstrap5-landing-page-responsiva/task/125862
 
+
+Offcanvas https://getbootstrap.com/docs/5.3/components/offcanvas/#how-it-works
+
+
+
+
