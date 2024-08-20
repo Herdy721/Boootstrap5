@@ -23,7 +23,7 @@
     />
     <link rel="stylesheet" href="./estilos.css" />
   </head>
-  <body>
+  <body data-bs-theme="light">
     <!-- navbar -->
     <header>
       <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
@@ -69,7 +69,7 @@
                   <a class="nav-link" href="#">Sobre</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contato</a>
+                  <a class="nav-link" href="#contato">Contato</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"
@@ -78,11 +78,11 @@
                         class="form-check-input"
                         type="checkbox"
                         role="switch"
-                        id="flexSwitchCheckDefault"
+                        id="modo-noturno"
                       />
                       <label
                         class="form-check-label"
-                        for="flexSwitchCheckDefault"
+                        for="modo-noturno"
                         >Modo noturno</label
                       >
                     </div></a
@@ -299,18 +299,83 @@
         class="banners banner-3 d-flex flex-column justify-content-center text-center"
       ></section>
       <!-- form -->
-      <section class="py-4 container">
+      <section class="p-md-5 p-sm-2 container">
         <div class="border border-1 rounded p-3">
           <h3 class="fw-bold p-3">Entre em contato!</h3>
+          <form id="contato">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingNome"
+                placeholder="nome"
+              />
+              <label for="floatingNome">Nome</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingEmail"
+                placeholder="name@example.com"
+              />
+              <label for="floatingEmail">E-mail</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingTelefone"
+                placeholder="Telefone"
+              />
+              <label for="floatingTelefone">Telefone</label>
+            </div>
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected>Preferência de contato:</option>
+              <option value="1">Whatsapp</option>
+              <option value="2">E-mail</option>
+              <option value="3">Ligação</option>
+            </select>
+            <label for="nivel-satisfacao" class="form-label"
+              >Nível de satisfação:</label
+            >
+            <input type="range" class="form-range" id="nivel-satisfacao" />
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Deseja receber novidades e promoções por email?
+              </label>
+            </div>
+            <button
+              type="button"
+              class="btn botao-padrao fw-bold w-100 mt-3 py-2"
+            >
+              Enviar
+            </button>
+          </form>
         </div>
       </section>
+      <!-- footer -->
+      <footer class="rodape text-center">
+        <section class="container p-4 pb-0 mb-4">
+          <a href="#!" class="btn"><i class="bi bi-whatsapp"></i></a>
+          <a href="#!" class="btn"><i class="bi bi-instagram"></i></a>
+          <a href="#!" class="btn"><i class="bi bi-twitter"></i></a>
+          <div class="p-3">
+            2024 <i class="bi bi-c-circle"></i> Desenvolvido por Alura | Projeto
+            fictício sem fins comerciais.
+          </div>
+        </section>
+      </footer>
     </main>
-    <!-- footer -->
-    <footer h-30>
-      <div class="redes">
-        <div><img src="./" alt="" /></div>
-      </div>
-    </footer>
 
     <!-- canvas-1 -->
     <div
@@ -663,5 +728,6 @@
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
